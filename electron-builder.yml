@@ -1,0 +1,20 @@
+# نام برنامه (به عنوان مثال My Electron App)
+productName: MyElectronApp
+
+# شناسه برنامه (مانند com.example.myelectronapp)
+appId: com.example.myelectronapp
+
+directories:
+  output: dist
+
+files:
+  - "**/*"
+
+mac:
+  target: dmg
+
+win:
+  target: nsis
+
+linux:
+  target: AppImage

@@ -1,0 +1,30 @@
+{
+  "name": "text-to-voice",
+  "version": "0.0.1",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "pack": "electron-builder --dir",
+    "dist": "electron-builder"
+  },
+  "author": {
+    "name": "mohammad"
+  },
+  "devDependencies": {
+    "electron": "^31.0.1",
+    "electron-builder": "^24.13.3"
+  },
+  "build": {
+    "appId": "com.em.textToVoice",
+    "productName": "text-to-voice",
+    "target": "nsis",
+    "directories": {
+      "output": "dist"
+    },
+    "nsis": {
+      "allowToChangeInstallationDirectory": true,
+      "oneClick" : false
+    }
+  }
+}
